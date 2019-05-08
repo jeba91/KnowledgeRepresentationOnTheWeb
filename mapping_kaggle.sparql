@@ -1,0 +1,15 @@
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dba: <http://dbpedia.org/page/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex:  <http://ex.org/a#>
+
+CONSTRUCT {
+  ?URI a dbo:movie;
+    ex:kaggle_rating ?rate;
+    ex:word ?sent_word.
+}
+WHERE {
+  BIND (xsd:integer(?rating) AS ?rate)
+  BIND (URI(?nconst) AS ?URI)
+}
