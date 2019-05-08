@@ -8,12 +8,12 @@ The python scripts are for cleaning up used datasets or conversion to useable .c
 
 ## Libraries
 
-NLTK(Used to parse text, clean, tokenize and retrieve sentiments words)
-https://www.nltk.org/
-https://www.nltk.org/_modules/nltk/sentiment/vader.html
+NLTK(Used to parse text, clean, tokenize and retrieve sentiments words).
+https://www.nltk.org/ \n
+https://www.nltk.org/_modules/nltk/sentiment/vader.html \n
 
-TARQL(Used to parse .tsv and .csv into turtle files)
-http://tarql.github.io/examples/
+TARQL(Used to parse .tsv and .csv into turtle files).
+http://tarql.github.io/examples/ \n
 
 
 ## Data
