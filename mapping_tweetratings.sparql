@@ -6,7 +6,7 @@ PREFIX ex:  <http://ex.org/a#>
 
 CONSTRUCT {
   ?URI a dbo:movie;
-    ex:tweetRating ?rate.
+    mvo:tweetRating ?rate.
 }
 WHERE {
   BIND (URI(CONCAT('http://www.imdb.com/title/tt', ?nconst)) AS ?URI)

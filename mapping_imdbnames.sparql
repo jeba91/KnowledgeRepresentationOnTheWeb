@@ -7,7 +7,7 @@ CONSTRUCT {
     dbo:title ?primaryTitle;
     mvo:title ?originalTitle;
     a ?titleType;
-    ex:isAdult ?adult;
+    mvo:isAdult ?adult;
     mvo:releasedate ?year;
     mvo:runtime ?runtime.
 }
