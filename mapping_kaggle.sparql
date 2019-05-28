@@ -6,8 +6,8 @@ PREFIX ex:  <http://ex.org/a#>
 
 CONSTRUCT {
   ?URI a dbo:movie;
-    ex:kaggle_rating ?rate;
-    ex:word ?sent_word.
+    mvo:kaggleRating ?rate;
+    mvo:sentWord?sent_word.
 }
 WHERE {
   BIND (xsd:integer(?rating) AS ?rate)
