@@ -1,0 +1,20 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mvo: <http://www.movieontology.org/2009/11/09/movieontology>
+
+CONSTRUCT {
+  ?URI a dbo:movie;
+    mvo:title ?Title;
+    mvo:year ?Year;
+    mvo:ebertStars ?EbertStars;
+    mvo:ebertUrl ?URL;
+    mvo:ebertScore ?score;
+    mvo:ebertRating ?Rating;
+    mvo:runtime ?Runtime;
+    mvo:ebertReview ?Review;
+}
+
+WHERE {
+  BIND (URI(CONCAT('http://www.imdb.com/title/', ?tconst)) AS ?URI)
+  BIND (xsd:integer(?Year) AS ?year)
+}

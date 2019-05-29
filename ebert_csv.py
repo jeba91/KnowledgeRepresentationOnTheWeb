@@ -30,4 +30,4 @@ content['Runtime'] = content['Runtime'].str.replace("(b\')|\'", "")
 
 rogertebert = pd.concat([reviews[['Title', 'EbertStars', 'Year', 'URL', 'tconst','score']],content[['Rating','Runtime','Review']]],axis=1)
 
-reviews.to_pickle("reviewsEbertCleanTconst.pkl")
+rogertebert.to_csv("csv_file/reviewsEbertCleanTconst.csv", index = None, header=True)

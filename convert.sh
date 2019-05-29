@@ -8,3 +8,4 @@ sh tarql/target/appassembler/bin/tarql mapping_imdbgenre.sparql csv_file/parsed_
 sh tarql/target/appassembler/bin/tarql mapping_imdbgenre.sparql csv_file/parsed_imdbgenres2.csv > turtle_files/imdb_genres2.ttl
 sh tarql/target/appassembler/bin/tarql mapping_imdbgenre.sparql csv_file/parsed_imdbgenres3.csv > turtle_files/imdb_genres3.ttl
 sh tarql/target/appassembler/bin/tarql --tab mapping_imdbrating.sparql IMDB/title.ratings.tsv > turtle_files/imdb_ratings.ttl
+sh tarql/target/appassembler/bin/tarql mapping_rogerEbert.sparql csv_file/reviewsEbertCleanTconst.csv > turtle_files/roger_ebert.ttl
