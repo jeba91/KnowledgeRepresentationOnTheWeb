@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>My data story</title>
+  <link rel="shortcut icon" href="https://stories.triply.cc/shared/imgs/triply/logo.svg">
+  <link href="https://stories.triply.cc/shared/imgs/triply/logo.png" rel="icon" type="image/png">
+  <link rel="stylesheet" href="https://stories.triply.cc/shared/css/main.css">
+  <link href="https://stories.triply.cc/shared/css/yasgui/stories.min.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+
+
+<div class="flex">
+    <div class="content story">
+      <p>Top 12 movies after query with their respective genre.</p>
+      <!-- This query element fetches a Triply query configuration, and renders it on the html page-->
+      <query data-config-ref="https://krr.triply.cc/jeba91/Jeroen-krw/queries/imdbGenreQuery/2"></query>
+    </div>
+    <div class="content story">
+      <p>Negative and positive sentiment words per query</p>
+      <!-- This query element fetches a Triply query configuration, and renders it on the html page-->
+      <query data-config-ref="https://krr.triply.cc/jeba91/Jeroen-krw/queries/imdbSentimentWordsQuery/2"></query>
+    </div>
+    <div class="content story">
+      <p>Ratings per different movie</p>
+      <!-- This query element fetches a Triply query configuration, and renders it on the html page-->
+      <query data-config-ref="https://krr.triply.cc/jeba91/Jeroen-krw/queries/imdbRatingsQuery/3"></query>
+    </div>
+</div>
+
+
+
+
+<script src="https://nightly.yasgui.triply.cc/yasgui.polyfill.min.js"></script>
+  <script src="https://stories.triply.cc/shared/js/stories.min.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      window.stories()
+    };
+  </script>
+</body>
+</html>
